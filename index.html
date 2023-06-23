@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <div id="left_nav" class="left-nav">
+    <img id="close_left" class="close-btn" src="img/close.png" alt="">
+    <ul>
+      <li id="open_entr1">Вход</li>
+      <li id="open_reg1">Регистрация</li>
+    </ul>
+  </div>
+  <div id="quest" class="questions">
+    <img id="close_quest" class="close-btn" src="img/close.png" alt="">
+    <div class="q-content text-light text-center">
+      <h2>У вас остались вопросы?</h2>
+      <p class="my-2">Хотите, перезвоним вам за 27 секунд?</p>
+      <form class="my-3" action="">
+        <input id="q_input" type="text">
+        <div class="q-btn">
+          <button class="btn-this">Жду звонка!</button>
+          <small style="font-size: 10px;">Звонок бесплатный</small>
+        </div>
+      </form>
+      <div class="offtime">
+        <img src="/img/clock.svg" alt="">
+        <p class="time"> 00:27,00</p>
+      </div>
+      
+    </div>
+  </div>
+  <div id="registration" class="registration text-light">
+    <img id="close_reg" class="close-btn" src="img/close.png" alt="">
+    <div class="reg-content">
+      <h3>Регистрация</h3>
+      <p>После регистрации вы получите: <br>10 минут связи - бесплатно</p>
+      <form id="reg" action="">
+        <div class="form-item">
+          <label for="mail">Ваш e-mail</label>
+          <input id="mail" type="text">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <label for="user_name">Ваше имя</label>
+          <input id="user_name" type="text">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <label for="address">Адрес вашего сайта</label>
+          <input id="address" type="text">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <label for="phone">Ваш телефон (на него будут поступать звонки с сайта)</label>
+          <input id="phone" type="text">
+          <small></small>
+        </div>
+        <div class="form-item">
+          <label for="pass">Придумайте пароль</label>
+          <input id="pass" type="password">
+          <small></small>
+        </div>   
+        <button id="reg_btn" type="submit" class="btn-this">Зарегистрироваться</button>   
+      </form>
+    </div>
+  </div>
+  <div id="entrance" class="entrance text-light">
+    <img id="close_entr" class="close-btn" src="img/close.png" alt="">
+    <div class="e-content">
+      <h3>Вход в личный кабинет</h3>
+      <form id="entr" action="">
+        <div class="form-item">
+          <label for="e_mail">Ваш e-mail</label>
+          <input id="e_mail" type="text">
+        </div>
+        <div class="form-item">
+          <label for="e_pass">Ваше имя</label>
+          <input id="e_pass" type="text">
+        </div> 
+        <button class="btn-this">Войти</button>   
+        <p id="to_reg" class="toreg">Регистрация</p>
+      </form>
+    </div>
+  </div>
+  <header>
+    <div class="contain d-flex flex-column">
+      <div class="header-nav">
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <div class="col-6 logo">
+              <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="burger-adaptive col-0 d-flex justify-content-end">
+              <div id="burger" class="burger">
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+              </div>
+            </div>
+            <ul id="ul_deck" class="col-6 ul-nav d-flex justify-content-end text-light">
+              <li id="open_entr2" class="rounded p-2">Вход</li>
+              <li id="open_reg2" class="border border-2 border-light rounded p-2">Регистрация</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-light text-center m-2">Обратный звонок на сайт</h1>
+      <p class="text-light text-center m-0">Получайте в 3 раза больше звонков сразу после установки виджета на Ваш сайт</p>
+      <p class="text-light text-center">Сервис окупает свой годовой тариф в первую же неделю</p>
+      <button id="quest_3" class="text-uppercase">Подключить</button>
+    </div>
+
+  </header>
+  <section class="about">
+    <h2 class="h2-adaptive">Посмотрите видео <br>как работет виджет</h2>
+    <div class="contain">
+      <div class="row d-flex justify-content-start adaptive">
+        <div class="block">
+          <div class="number">01</div>
+          <h3>Устанавливаете код на сайт</h3>
+          <p>Вы устанавливате на свой сайт специальный html-код. Это займет 3 минуты или мы поможем вам</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-end adaptive">
+        <div class="block">
+          <div class="number">02</div>
+          <h3>На вашем сайте появится кнопка и вспывающее окно</h3>
+          <p>Посетители заходят на Ваш сайт, видят кнопку или всплывающее окно и вводят свой телефон</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-start adaptive">
+        <div class="block">
+          <div class="number">03</div>
+          <h3>Сервис автоматически звонит менеджеру и клиенту</h3>
+          <p>Как только менеджер взял трубку, сервис авоматически связывается с клиентом и соединяет его с менеджером. В среднем за 18,5 сек</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-end adaptive">
+        <div class="block">
+          <div class="number">04</div>
+          <h3>Клиент теперь Ваш!</h3>
+          <p>Уже через 28 секунд Ваш сотрудник общается с клиентом и делает продажу</p>
+        </div>
+      </div>
+    <h2>Посмотрите видео <br>как работет виджет</h2>
+    </div>
+  </section>
+  <div class="video">
+    <img src="img/video.png" alt="video">
+  </div>
+  <section class="price">
+    <div class="contain">
+      <div class="row price-row d-flex justify-content-evenly text-light">
+        <div class="col-md-4 my-3 price-item">
+          <h4>Бесплатно <br>0 руб.</h4>
+          <p>Тестовая версия на 14 дней и 20 руб. на балансе для проверки качества связи</p>
+          <button id="quest_1" class="border border-2 border-light rounded p-2 my-3 text-uppercase">Попробовать</button>
+        </div>
+        <div class="col-md-4 my-3 price-item">
+          <h4>При оплате на <br>1 год от 299 руб.</h4>
+          <p>Платите только за наш сервис, связь оплачивается по минимальной цене 4 руб. за минуту.</p>
+          <button id="quest_2" class="border border-2 border-light rounded p-2 my-3 text-uppercase my-2">Подключить</button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

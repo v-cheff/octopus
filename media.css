@@ -1,0 +1,45 @@
+@media (max-width: 600px) {
+  .header-nav {
+    height: 50vh;
+  }
+  .about {
+    padding-top: 10vh;
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, #4F3963, #764469); 
+  }
+  .block {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .about h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .price {
+    background: 
+    url(img/bg-3.png) bottom/100% no-repeat,
+    url(img/fish.png) bottom 100px left/30% no-repeat,
+    linear-gradient(to bottom, #694167, #2C2142);
+  }
+  .h2-adaptive {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .ul-nav {
+    display: none !important;
+  }
+  .burger-adaptive {
+    display: flex !important;
+  }
+
+  .q-content input,
+  .q-btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .q-content form {
+      flex-wrap: wrap;
+  }
+}
+
